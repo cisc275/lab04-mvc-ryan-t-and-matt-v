@@ -41,6 +41,7 @@ public class View extends JPanel{
     	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     	frame.setSize(frameWidth, frameHeight);
     	frame.setVisible(true);
+    	loadImages();
 
 	}
 	
@@ -149,7 +150,7 @@ public class View extends JPanel{
 				break;
     	}
     	try {
-    		bufferedImage = ImageIO.read(new File("images/orc/orc_forward_" + imgName + ".png"));
+    		bufferedImage = ImageIO.read(new File("src/images/orc/orc_forward_" + imgName + ".png"));
     		return bufferedImage;
     	} catch (IOException e) {
     		e.printStackTrace();

@@ -47,7 +47,7 @@ public class Model {
 			if(direction==Direction.SOUTH){
 				direction=Direction.NORTH;
 			}
-			else if(direction=Direction.SOUTHWEST){
+			else if(direction==Direction.SOUTHWEST){
 				direction=Direction.NORTHWEST;
 			}
 			else{
@@ -84,7 +84,7 @@ public class Model {
 			ypos-=yInc;
 		}
 		else if(direction==Direction.NORTHEAST){
-			ypos+=yInc;
+			ypos-=yInc;
 			xpos+=xInc;
 		}
 		else if(direction==Direction.EAST){
@@ -104,7 +104,7 @@ public class Model {
 		else if(direction ==Direction.WEST){
 			xpos-=xInc;
 		}
-		else{
+		else if(direction ==Direction.NORTHWEST) {
 			ypos-=yInc;
 			xpos-=xInc;
 		}
